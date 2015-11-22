@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/back_layout" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_centerVertical="true">
+            <ImageView android:id="@id/add_car_back" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/common_back_icon" />
+            <TextView android:id="@id/add_car_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" style="@style/text_large_black_normal_style" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <RelativeLayout android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@id/share_img" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/share_img" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/rel_more" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="3.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="24.0dip" android:src="@drawable/addshop_pop_more" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

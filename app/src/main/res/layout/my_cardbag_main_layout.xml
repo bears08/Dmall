@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white_f7f7f7" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ws="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/toolbar" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/view_head" layout="@layout/card_bag_item_head" />
+        <com.wm.dmall.view.pull.RefreshLayout android:id="@id/refresh_layout" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/view_head">
+            <ListView android:id="@id/cardbag_list_view" android:scrollbars="@null" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="#00000000" android:divider="@null" android:dividerHeight="4.0dip" android:overScrollMode="never" />
+        </com.wm.dmall.view.pull.RefreshLayout>
+        <com.wm.dmall.view.EmptyView android:id="@id/empty_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

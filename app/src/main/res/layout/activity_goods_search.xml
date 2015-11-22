@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ws="http://schemas.android.com/apk/res-auto">
+    <android.support.v4.widget.DrawerLayout android:id="@id/drawer_layout" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/toolbar" />
+            <LinearLayout android:orientation="horizontal" android:background="@drawable/d_border" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:id="@id/ll_relevancy" style="@style/GoodsSearch">
+                    <TextView android:gravity="center" android:id="@id/tv_relevancy" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="相关度" style="@style/text_normal_graymm_style" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/ll_price" style="@style/GoodsSearch">
+                    <TextView android:gravity="center" android:id="@id/order_price_origin_tv" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="价格" style="@style/text_normal_graymm_style" />
+                    <ImageView android:id="@id/iv_price_sort" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/search_ico_price_filter_nor" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/ll_filter" style="@style/GoodsSearch">
+                    <TextView android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="筛选" style="@style/text_normal_graymm_style" />
+                    <ImageView android:layout_width="10.0dip" android:layout_height="fill_parent" android:src="@drawable/ic_filter" />
+                </LinearLayout>
+            </LinearLayout>
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <android.support.v4.widget.SwipeRefreshLayout android:id="@id/srl" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <com.wm.dmall.view.EmptyRecyclerView android:id="@id/recycler_view" android:background="@color/bg_common" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" />
+                </android.support.v4.widget.SwipeRefreshLayout>
+                <ImageView android:layout_gravity="center" android:id="@id/iv_empty" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/search_ico_empty_dmall_txt" />
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="end" android:orientation="vertical" android:background="@android:color/white" android:layout_width="280.0dip" android:layout_height="fill_parent">
+            <com.wm.dmall.view.FilterMenu android:id="@id/fm" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+    </android.support.v4.widget.DrawerLayout>
+</LinearLayout>

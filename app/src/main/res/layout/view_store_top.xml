@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_store_top" android:background="@color/loc_bg" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_loc_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_cart" />
+    <TextView android:ellipsize="end" android:id="@id/tv_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="暂无法定位您的位置，请手动选择门店" android:singleLine="true" style="@style/text_small_white_style" />
+</LinearLayout>

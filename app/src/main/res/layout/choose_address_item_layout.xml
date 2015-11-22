@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/single_white_btn_bg_selector" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/address_choose_state" android:background="@drawable/address_default" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        <LinearLayout android:orientation="vertical" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/address_choose">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:ellipsize="end" android:id="@id/address_name" android:layout_width="100.0dip" android:layout_height="wrap_content" android:text="测试" android:singleLine="true" style="@style/text_small_graym_style" />
+                <TextView android:id="@id/address_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="1566xxxxxx" style="@style/text_small_graym_style" />
+            </LinearLayout>
+            <TextView android:ellipsize="end" android:id="@id/address_local_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="传热是测" android:singleLine="false" style="@style/text_small_black_normal_style" />
+        </LinearLayout>
+        <ImageView android:id="@id/address_choose" android:background="@drawable/checbox_unselect" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

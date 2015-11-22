@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?actionBarSize"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/scan_title_text_size" android:textColor="@color/scan_title_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/scan_coupon_title" android:layout_centerVertical="true" style="@style/text_large_black_normal_style" />
+    <ImageView android:id="@id/scan_coupon_ticket_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/scan_toolbar_menu_margin_right" android:src="@drawable/coupon_ticket_icon" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

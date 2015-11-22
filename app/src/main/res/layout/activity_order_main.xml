@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/bg_common" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ws="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/toolbar" />
+    <com.wm.dmall.view.PagerSlidingTabStrip android:id="@id/tabs" android:background="@drawable/common_white_noround_bg" android:layout_width="fill_parent" android:layout_height="48.0dip" ws:pstsIndicatorColor="@color/btn_color_red" ws:selectColor="@color/btn_color_red" ws:unSelectColor="@color/text_black_normal" ws:pstsIndicatorHeight="4.0dip" ws:pstsShouldExpand="true" />
+    <com.wm.dmall.view.MyOrderViewPager android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

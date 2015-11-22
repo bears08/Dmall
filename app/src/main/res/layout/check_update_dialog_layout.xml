@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/com.wm.dmall">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/dialog_corners_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_centerInParent="true">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip">
+            <View android:layout_gravity="center_vertical" android:background="@color/color_red_ff5000" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <TextView android:textSize="@dimen/text_lv18" android:textColor="@color/color_red_ff5000" android:layout_gravity="center_horizontal" android:id="@id/update_title" android:background="@color/white" android:paddingLeft="@dimen/dialog_title_lr" android:paddingRight="@dimen/dialog_title_lr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="版本更新" android:singleLine="true" />
+        </FrameLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="6.0dip">
+            <TextView android:textSize="@dimen/text_lv14" android:id="@id/update_info_title" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/dialog_titlec_tv" android:maxLines="10" android:singleLine="false" style="@style/text_up_dialog_style" />
+            <TextView android:textSize="@dimen/text_lv14" android:id="@id/update_info_text" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="10" android:singleLine="false" android:layout_below="@id/update_info_title" style="@style/text_up_dialog_style" />
+            <LinearLayout android:orientation="vertical" android:id="@id/download_layout" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <TextView android:textSize="@dimen/text_lv14" android:id="@id/update_info_text_1" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="下载中...." android:maxLines="10" android:singleLine="false" style="@style/text_up_dialog_style" />
+                <com.wm.dmall.view.RoundCornerProgressBar android:id="@id/download_progress" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="15.0dip" android:layout_marginTop="5.0dip" app:backgroundPadding="5dp" app:rcBackgroundColor="@color/dark_bg" app:rcBackgroundRadius="0dp" app:rcMax="100" />
+            </LinearLayout>
+        </RelativeLayout>
+        <View android:background="@color/divided_line_color" android:layout_width="fill_parent" android:layout_height="0.20000005dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="10.0dip">
+            <Button android:textSize="@dimen/text_lv16" android:textColor="@color/color_red_ff5000" android:id="@id/update_cancel_btn" android:background="@drawable/dialog_white_btn_bg_selector" android:layout_width="0.0dip" android:layout_height="40.0dip" android:text="@string/dialog_left_btn1" android:layout_weight="1.0" style="@style/text_normal_black_style" />
+            <Button android:textSize="@dimen/text_lv16" android:id="@id/update_confirm_btn" android:background="@drawable/dialog_red_btn_bg_selector" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:text="@string/dialog_right_btn" android:layout_weight="1.0" style="@style/text_normal_white_style" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

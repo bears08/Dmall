@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/common_white_noround_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <RelativeLayout android:id="@id/settle_content_layout" android:layout_width="fill_parent" android:layout_height="55.0dip">
+        <LinearLayout android:orientation="horizontal" android:id="@id/settle_selectall_layout" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <RelativeLayout android:layout_width="48.0dip" android:layout_height="fill_parent">
+                <CheckBox android:id="@id/settle_selectall_cb" android:background="@null" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/selector_cart_check" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <TextView android:textSize="13.0sp" android:textColor="#ff333333" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cart_select_all" />
+        </LinearLayout>
+        <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/settlement_settle_tv" android:background="@drawable/selector_cart_red_btn_bg" android:layout_width="95.0dip" android:layout_height="fill_parent" android:text="结算(3)" android:layout_alignParentRight="true" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:layout_toLeftOf="@id/settlement_settle_tv" android:layout_centerVertical="true">
+            <TextView android:textSize="16.0sp" android:textColor="#ffff5000" android:gravity="right" android:id="@id/settlement_price_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="合计:￥120.00" />
+            <TextView android:textSize="10.0sp" android:textColor="#ff666666" android:gravity="right" android:id="@id/settlement_privilege_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="总额￥10元   优惠￥10元" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</LinearLayout>

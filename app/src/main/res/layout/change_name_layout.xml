@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/bg_common" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ws="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/toolbar" />
+    <LinearLayout android:orientation="vertical" android:background="@drawable/common_white_round_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+        <EditText android:id="@id/change_name_edit" android:background="@null" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="2-20个字" android:cursorVisible="true" android:singleLine="true" android:maxLength="20" android:textCursorDrawable="@null" style="@style/text_small_black_normal_style" />
+    </LinearLayout>
+    <TextView android:id="@id/change_name_notice" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="用户昵称规则：可使用中文、大写英文、小写英文、数字、下划线及其组合。" android:singleLine="false" style="@style/text_normal_black_light_style" />
+    <com.material.widget.PaperButton android:id="@id/change_name_confirm" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginLeft="2.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="2.0dip" ws:paper_text="@string/ok" ws:paper_text_size="@dimen/normal_text" ws:paper_text_color="@color/white" ws:paper_color="@color/btn_color_red" />
+</LinearLayout>

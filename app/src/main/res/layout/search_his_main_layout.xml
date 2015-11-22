@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ws="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/toolbar" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ScrollView android:background="@android:color/transparent" android:scrollbars="@null" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@id/popular_search_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <View android:background="@color/bg_common" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+                    <TextView android:textSize="@dimen/text_lv14" android:textColor="@color/gray_m" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginLeft="12.0dip" android:text="热搜" android:drawableLeft="@drawable/search_popular_icon" android:drawablePadding="6.0dip" android:layout_toRightOf="@id/popular_search_icon" android:layout_centerVertical="true" />
+                    <View android:background="@color/dark_line" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                </LinearLayout>
+                <com.wm.dmall.view.SearchSingleView android:orientation="vertical" android:id="@id/search_his_hot_list" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <LinearLayout android:orientation="vertical" android:id="@id/search_his_local_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <View android:background="@color/bg_common" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+                    <com.wm.dmall.view.SearchSingleView android:orientation="vertical" android:id="@id/search_his_list" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <Button android:id="@id/search_his_clear" android:background="@drawable/white_btn_bg_selector" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="19.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="19.0dip" android:text="清空搜索历史" style="@style/text_normal_black_style" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <ListView android:id="@id/search_suggestions" android:background="@color/bg_common" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@color/bg_translucent3" android:divider="@color/dark_line" android:dividerHeight="@dimen/global_line_height" />
+    </RelativeLayout>
+</LinearLayout>

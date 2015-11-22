@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:id="@id/mode_left_bg_view" android:background="@drawable/cart_mode_left_bg" android:layout_width="48.0dip" android:layout_height="fill_parent" />
+        <View android:id="@id/mode_right_bg_view" android:background="@drawable/cart_mode_right_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toRightOf="@id/mode_left_bg_view" />
+        <RelativeLayout android:id="@id/mode_display_view" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/mode_display_laber_iv" android:background="#ffff5000" android:layout_width="5.0dip" android:layout_height="fill_parent" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:id="@id/mode_display_name_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_toRightOf="@id/mode_display_laber_iv" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/mode_edit_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:id="@id/mode_select_layout" android:layout_width="48.0dip" android:layout_height="fill_parent">
+                <CheckBox android:id="@id/mode_select_cb" android:background="@null" android:visibility="visible" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/selector_cart_check" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:id="@id/mode_edit_name_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/mode_select_layout" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

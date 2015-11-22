@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/common_white_round_bg" android:layout_width="100.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/add_car_pro_img" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_marginLeft="1.0dip" android:layout_marginTop="1.0dip" android:layout_marginRight="1.0dip" />
+    <View android:background="@color/divided_line_color" android:layout_width="100.0dip" android:layout_height="0.20000005dip" />
+    <LinearLayout android:orientation="vertical" android:background="@color/bg_common" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.5dip" android:layout_marginRight="0.5dip" android:layout_marginBottom="0.5dip">
+        <TextView android:id="@id/add_car_proname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="商品名称商商品名称商品名称品名称" android:singleLine="true" style="@style/text_small_black_normal_style" />
+        <RelativeLayout android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+            <TextView android:id="@id/add_car_proprice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="价格" android:singleLine="true" android:layout_centerVertical="true" style="@style/text_small_black_normal_bold_style" />
+            <ImageView android:id="@id/add_car_img" android:background="@drawable/pro_collection" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

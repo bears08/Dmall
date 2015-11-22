@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="layout" name="abc_action_bar_up_container">false</item>
+    <item type="layout" name="abc_action_bar_view_list_nav_layout">false</item>
+    <item type="layout" name="choose_addresslist_dialog_layout">false</item>
+    <item type="layout" name="input_connect_phone_dialog">false</item>
+    <item type="layout" name="my_detail_info_layout">false</item>
+    <item type="layout" name="myinfo_center_header_img_layout">false</item>
+    <item type="layout" name="scan_guide">false</item>
+    <item type="layout" name="smartgo_toast_view">false</item>
+</resources>

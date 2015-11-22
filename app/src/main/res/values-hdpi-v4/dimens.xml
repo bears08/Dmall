@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="floating_edit_text_padding_bottom">20.0dip</dimen>
+    <dimen name="floating_edit_text_padding_top">15.0dip</dimen>
+    <dimen name="large_text">14.0sp</dimen>
+    <dimen name="normal_text">12.0sp</dimen>
+    <dimen name="scan_barcode_rect_height">196.0dip</dimen>
+    <dimen name="scan_offline_barcode_margin_top">18.0dip</dimen>
+    <dimen name="scan_operate_layout_margin_lr">35.0dip</dimen>
+    <dimen name="scan_operate_layout_margin_top">340.0dip</dimen>
+    <dimen name="scan_qr_rect_height">260.0dip</dimen>
+    <dimen name="scan_qr_rect_width">260.0dip</dimen>
+    <dimen name="scan_rect_top_offset">50.0dip</dimen>
+    <dimen name="scan_tip_margin_top">22.0dip</dimen>
+    <dimen name="small_text">10.0sp</dimen>
+    <dimen name="smartgo_address_width">280.0dip</dimen>
+    <dimen name="smartgo_ware_operate_margin_top">20.0dip</dimen>
+    <dimen name="smartgo_ware_prebuy_margin_top">265.0dip</dimen>
+    <dimen name="xlarge_text">16.0sp</dimen>
+    <dimen name="xsmall_text">8.0sp</dimen>
+    <dimen name="xxlarge_text">18.0sp</dimen>
+    <dimen name="xxsmall_text">8.0sp</dimen>
+</resources>

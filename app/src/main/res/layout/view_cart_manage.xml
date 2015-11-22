@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="55.0dip" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/dark_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/cart_edit_selectall_layout" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="48.0dip" android:layout_height="fill_parent">
+            <CheckBox android:id="@id/cart_edit_selectall_cb" android:background="@null" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/selector_cart_check" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <TextView android:textSize="13.0sp" android:textColor="#ff333333" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cart_select_all" />
+    </LinearLayout>
+    <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/cart_edit_delete_tv" android:background="@drawable/selector_cart_red_btn_bg" android:layout_width="126.0dip" android:layout_height="fill_parent" android:text="@string/cart_manage_delete" android:layout_alignParentRight="true" />
+    <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/cart_edit_collection_tv" android:background="@drawable/selector_cart_gray_btn_bg" android:layout_width="126.0dip" android:layout_height="fill_parent" android:layout_marginRight="2.0dip" android:text="@string/cart_manage_add_collect" android:layout_toLeftOf="@id/cart_edit_delete_tv" />
+</RelativeLayout>

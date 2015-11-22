@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ws="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/toolbar" />
+    <ScrollView android:scrollbars="@null" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dip">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="15.0sp" android:textColor="#ff454545" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="请输入手机" />
+                <TextView android:textSize="15.0sp" android:textColor="#ffff5000" android:id="@id/tv_local_phone_number" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="15.0sp" android:textColor="#ff454545" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="收到的短信验证码" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="10.0dip">
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <EditText android:textSize="16.0sp" android:textColorHint="#ff999999" android:id="@id/identify_code_edit" android:background="@drawable/password_textview_bg" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="53.0dip" android:hint="请输入短信验证码" android:cursorVisible="true" android:maxLength="6" android:textCursorDrawable="@null" />
+                    <ImageView android:id="@id/identify_code_clear" android:background="@drawable/login_btn_clear" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignRight="@id/identify_code_edit" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <TextView android:textSize="16.0sp" android:gravity="center" android:id="@id/identify_get_code" android:background="@drawable/password_textview_bg" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="120.0dip" android:layout_height="53.0dip" android:layout_marginLeft="15.0dip" android:text="获取验证码" />
+            </LinearLayout>
+            <TextView android:textSize="16.0sp" android:textColor="#80ff5000" android:gravity="center" android:id="@id/code_confirm_btn" android:background="@drawable/password_btn_bg" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="200.0dip" android:layout_height="40.0dip" android:layout_marginTop="25.0dip" android:text="验 证" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

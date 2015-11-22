@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.wm.dmall">
+    <RelativeLayout android:id="@id/order_settlement_layout" android:background="@drawable/d_border" android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:id="@id/order_settlement_price_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="实付款:" android:layout_centerVertical="true" style="@style/text_large_graym_style" />
+        <TextView android:id="@id/order_settlement_price_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="xxxxxxx" android:layout_toRightOf="@id/order_settlement_price_description" android:layout_centerVertical="true" style="@style/text_large_red_style" />
+        <TextView android:textSize="@dimen/text_lv16" android:textColor="@color/white" android:gravity="center" android:id="@id/order_settlement_btn" android:background="@drawable/selector_cart_red_btn_bg" android:layout_width="130.0dip" android:layout_height="56.0dip" android:text="提交订单" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <ScrollView android:id="@id/order_confirm_scroll" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/order_settlement_layout">
+        <LinearLayout android:orientation="vertical" android:id="@id/order_confirm_main" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.wm.dmall.settlement.view.OrderConfirmAddressView android:id="@id/order_address_view" style="@style/OrderItemBg" />
+            <RelativeLayout android:id="@id/order_wares_view" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" style="@style/OrderItemBg">
+                <LinearLayout android:orientation="horizontal" android:id="@id/order_wares_container_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ImageView android:id="@id/order_wares_arrow_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/common_arrow_img" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <TextView android:id="@id/order_wares_count_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:layout_toLeftOf="@id/order_wares_arrow_iv" android:layout_centerVertical="true" style="@style/text_small_graym_style" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/order_delivery_view" style="@style/OrderItemBg">
+                <TextView android:id="@id/order_delivery_laber_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="支付配送" android:layout_centerVertical="true" style="@style/text_normal_graymm_style" />
+                <ImageView android:id="@id/order_delivery_arrow_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/common_arrow_img" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" android:layout_toLeftOf="@id/order_delivery_arrow_iv" android:layout_toRightOf="@id/order_delivery_laber_tv">
+                    <TextView android:ellipsize="end" android:gravity="right" android:id="@id/order_delivery_paytype_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" style="@style/text_red_normal_style" />
+                    <TextView android:ellipsize="end" android:gravity="right" android:id="@id/order_delivery_deliverytype_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:singleLine="true" style="@style/text_red_normal_style" />
+                    <TextView android:ellipsize="end" android:gravity="right" android:id="@id/order_delivery_time_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:singleLine="true" style="@style/text_normal_graym_style" />
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/order_invoice_view" style="@style/OrderItemBg">
+                <TextView android:id="@id/order_invoice_laber_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="发票信息" android:layout_centerVertical="true" style="@style/text_normal_graymm_style" />
+                <ImageView android:id="@id/order_invoice_arrow_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/common_arrow_img" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:layout_toLeftOf="@id/order_invoice_arrow_iv" android:layout_toRightOf="@id/order_invoice_laber_tv" android:layout_centerVertical="true">
+                    <TextView android:gravity="right" android:id="@id/order_invoice_type_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/text_normal_graym_style" />
+                    <TextView android:gravity="right" android:id="@id/order_invoice_head_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="3.0dip" android:text="不开发票" style="@style/text_normal_graym_style" />
+                    <TextView android:gravity="right" android:id="@id/order_invoice_content_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" style="@style/text_normal_graym_style" />
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/order_coupon_view" android:layout_height="72.0dip" style="@style/OrderItemBg">
+                <TextView android:id="@id/order_coupon_label_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="优惠券/优惠码" android:layout_centerVertical="true" style="@style/text_normal_graymm_style" />
+                <TextView android:textColor="#ffffffff" android:gravity="center" android:id="@id/order_coupon_number_tv" android:background="@drawable/bg_coupon_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/order_coupon_label_tv" android:layout_centerVertical="true" style="@style/text_small_style" />
+                <ImageView android:id="@id/order_coupon_arrow_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/common_arrow_img" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <TextView android:textColor="@color/gray_m" android:layout_gravity="center_vertical" android:id="@id/order_coupon_status_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:layout_toLeftOf="@id/order_coupon_arrow_iv" android:layout_centerVertical="true" style="@style/text_normal_graym_style" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/order_balance_view" android:layout_height="72.0dip" style="@style/OrderItemBg">
+                <TextView android:id="@id/order_balance_label_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="余额支付" android:layout_centerVertical="true" style="@style/text_normal_graymm_style" />
+                <TextView android:textColor="@color/pay_balance_info_text_color" android:id="@id/order_balance_info_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_toRightOf="@id/order_balance_label_tv" android:layout_centerVertical="true" style="@style/text_normal_style" />
+                <RelativeLayout android:id="@id/order_balance_select_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                    <CheckBox android:id="@id/order_balance_select_cb" android:background="@null" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/selector_pay_check" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" style="@style/OrderItemBg">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="商品金额" style="@style/text_normal_graymm_style" />
+                    <TextView android:textColor="@color/color_red_ff5000" android:gravity="right" android:id="@id/order_price_origin_tv" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/text_normal_style" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="促销优惠" style="@style/text_normal_graymm_style" />
+                    <TextView android:gravity="right" android:id="@id/order_price_promotion_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/text_normal_graym_style" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/order_price_coupon_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/order_detail_coupon_label" style="@style/text_normal_graymm_style" />
+                    <TextView android:gravity="right" android:id="@id/order_price_coupon_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/text_normal_graym_style" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/order_price_coupon_code_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="优惠码" style="@style/text_normal_graymm_style" />
+                    <TextView android:gravity="right" android:id="@id/order_price_coupon_code_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/text_normal_graym_style" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="配送费" style="@style/text_normal_graymm_style" />
+                    <TextView android:gravity="right" android:id="@id/order_price_delivery_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/text_normal_graym_style" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/order_price_balance_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="余额支付" style="@style/text_normal_graymm_style" />
+                    <TextView android:gravity="right" android:id="@id/order_price_balance_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/text_normal_graym_style" />
+                </LinearLayout>
+                <View android:layout_margin="8.0dip" style="@style/DividedLine" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/order_delivery_tip_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:id="@id/order_delivery_tip_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="购物满59元运费减6元" style="@style/text_small_graymmm_style" />
+                    <ImageView android:layout_gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:src="@drawable/orderdetail_ico_info" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

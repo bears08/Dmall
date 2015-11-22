@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="choose_down_circle_arrow">false</item>
+    <item type="drawable" name="prodcut_ico_collect">false</item>
+    <item type="drawable" name="prodcut_ico_collect_fill">false</item>
+</resources>

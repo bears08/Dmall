@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/bg_common" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/toolbar" />
+    <ScrollView android:scrollbars="@null" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/help_phone_layout" android:background="@drawable/single_white_btn_bg_selector" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="联系客服" android:layout_centerVertical="true" style="@style/text_small_black_normal_style" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="@string/service_phone" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/text_normal_red_bold_style" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/new_play_in_layout" android:background="@drawable/single_white_btn_bg_selector" android:padding="10.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="新手入门" android:layout_centerVertical="true" style="@style/text_small_black_normal_style" />
+                <ImageView android:background="@drawable/common_arrow_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/common_white_noround_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <RelativeLayout android:id="@id/pay_method_layout" android:background="@drawable/my_info_bg_selector" android:padding="10.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="支付方式" android:layout_centerVertical="true" style="@style/text_small_black_normal_style" />
+                    <ImageView android:background="@drawable/common_arrow_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+                <View android:background="@color/divided_line_color" android:layout_width="fill_parent" android:layout_height="0.100000024dip" />
+                <RelativeLayout android:id="@id/delivery_method_layout" android:background="@drawable/my_info_bg_selector" android:padding="10.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="配送方式" android:layout_centerVertical="true" style="@style/text_small_black_normal_style" />
+                    <ImageView android:background="@drawable/common_arrow_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <RelativeLayout android:id="@id/return_pro_layout" android:background="@drawable/single_white_btn_bg_selector" android:padding="10.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="退货服务" android:layout_centerVertical="true" style="@style/text_small_black_normal_style" />
+                <ImageView android:background="@drawable/common_arrow_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/normal_qs_layout" android:background="@drawable/single_white_btn_bg_selector" android:padding="10.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="常见问题" android:layout_centerVertical="true" style="@style/text_small_black_normal_style" />
+                <ImageView android:background="@drawable/common_arrow_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

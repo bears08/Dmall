@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/parent_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.wm.dmall.view.HomePageScrollView android:scrollbarSize="10.0dip" android:scrollbarThumbVertical="@android:color/black" android:id="@id/scrollView" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:id="@id/no_use_buy" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginTop="200.0dip">
+                    <TextView android:typeface="monospace" android:textColor="@android:color/white" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                    <Button android:id="@id/button" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="1000.0dip">
+                    <LinearLayout android:orientation="vertical" android:background="#ff121212" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="50.0dip" />
+                    <LinearLayout android:orientation="vertical" android:background="#ff121212" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="50.0dip" />
+                    <LinearLayout android:orientation="vertical" android:background="#ff121212" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="50.0dip" />
+                    <LinearLayout android:orientation="vertical" android:background="#ff121212" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="50.0dip" />
+                    <LinearLayout android:orientation="vertical" android:background="#ff121212" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="50.0dip" />
+                    <HorizontalScrollView android:background="#ff6b8e23" android:layout_width="fill_parent" android:layout_height="10.0dip" android:layout_marginTop="10.0dip">
+                        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:background="#ff8b2252" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50.0dip">
+                            <Button android:layout_gravity="center_vertical" android:layout_width="200.0dip" android:layout_height="100.0dip" android:text="te1st" />
+                            <Button android:layout_width="200.0dip" android:layout_height="100.0dip" android:text="te1st" />
+                            <Button android:layout_width="200.0dip" android:layout_height="100.0dip" android:text="test" />
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                </LinearLayout>
+            </LinearLayout>
+            <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/top_buy_layout" android:background="#ff8b2500" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                <TextView android:typeface="sans" android:textColor="@android:color/white" android:ellipsize="end" android:id="@id/text_address" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="地址测试地址测试地址测试地址测试地址测试试" android:singleLine="true" android:layout_toLeftOf="@id/address_layout" android:layout_centerVertical="true" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/address_layout" android:background="#ff8b2500" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                    <Button android:id="@id/button1" android:layout_width="40.0dip" android:layout_height="40.0dip" android:text="on" />
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:background="#ff68228b" android:layout_width="fill_parent" android:layout_height="200.0dip">
+                <ImageView android:id="@id/test_inmg" android:background="@drawable/ic_launcher" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="60.0dip" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/input_layout" android:background="#ff008b00" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:layout_marginTop="100.0dip" android:layout_marginRight="50.0dip">
+                <EditText android:id="@id/input_edit" android:background="@null" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:hint="搜索" android:cursorVisible="true" android:layout_toLeftOf="@id/input_search_icon" android:layout_centerVertical="true" android:textCursorDrawable="@null" />
+                <ImageView android:id="@id/input_search_icon" android:background="#ffababab" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </FrameLayout>
+    </com.wm.dmall.view.HomePageScrollView>
+</RelativeLayout>

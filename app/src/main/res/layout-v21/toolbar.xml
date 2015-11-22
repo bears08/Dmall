@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar android:id="@id/toolbar" android:background="@drawable/d_border" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?actionBarSize" android:translationZ="2.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.wm.dmall" />

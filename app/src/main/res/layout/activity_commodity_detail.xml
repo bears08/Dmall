@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/view_bottom" android:background="@drawable/common_white_noround_bg" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true">
+        <ImageButton android:id="@id/button_collection" android:background="@drawable/icon_collection_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <View android:id="@id/view_divider_line" android:layout_marginLeft="5.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="8.0dip" android:layout_toRightOf="@id/button_collection" style="@style/view_divider_vertical_line" />
+        <RelativeLayout android:layout_width="58.0dip" android:layout_height="wrap_content" android:layout_toRightOf="@id/view_divider_line" android:layout_centerVertical="true">
+            <ImageButton android:id="@id/button_car" android:background="@drawable/icon_carshop_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+            <TextView android:textSize="9.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/text_add_car_price" android:background="@drawable/car_total_price" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginRight="4.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <Button android:enabled="false" android:textSize="@dimen/text_lv16" android:textColor="@color/white" android:gravity="center" android:id="@id/button_add_car" android:background="@drawable/button_add_carshop_selector" android:layout_width="130.0dip" android:layout_height="fill_parent" android:text="加入购物车" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <com.wm.dmall.view.pull.PullPushLayoutView android:id="@id/view_pull_push_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/view_bottom">
+        <com.wm.dmall.base.FastWebView android:id="@id/common_webview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/view_bottom" />
+    </com.wm.dmall.view.pull.PullPushLayoutView>
+    <RelativeLayout android:id="@id/view_nav" android:background="@drawable/common_white_noround_bg" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentTop="true">
+        <ImageButton android:id="@id/button_back" android:background="@drawable/icon_back_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <ImageButton android:id="@id/button_share" android:background="@drawable/icon_share_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <View android:id="@id/view_nav_line" android:background="#ffdcdcdc" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+        <ProgressBar android:id="@id/webloading_progressbar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="2.0dip" android:max="100" android:progressDrawable="@drawable/webloading_progressbar" android:layout_below="@id/toolbar" style="?android:attr/progressBarStyleHorizontal" />
+    </RelativeLayout>
+    <com.wm.dmall.view.EmptyView android:id="@id/empty_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+</RelativeLayout>

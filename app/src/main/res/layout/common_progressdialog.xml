@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/abc_popup_background_mtrl_mult" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.wm.dmall">
+    <com.material.widget.CircularProgress android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20.0dip" app:circular_progress_color="@color/color_red_ff5000" app:circular_progress_size="Small" />
+    <TextView android:gravity="center_vertical" android:id="@id/tv_content" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="数据加载中..." />
+</LinearLayout>

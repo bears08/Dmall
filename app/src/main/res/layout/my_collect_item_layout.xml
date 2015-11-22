@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/common_white_noround_bg" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/iv_img_edit_layout" android:visibility="gone" android:clickable="true" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_centerVertical="true">
+        <ImageView android:id="@id/iv_img_edit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/pro_img_layout" android:background="@drawable/common_white_round_bg" android:padding="2.0dip" android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_toRightOf="@id/iv_img_edit_layout">
+        <ImageView android:id="@id/pro_img" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/pro_detail_info_layout" android:background="@android:color/transparent" android:paddingLeft="15.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/add_buy_car" android:layout_toRightOf="@id/pro_img_layout" android:layout_centerVertical="true">
+        <TextView android:id="@id/pro_name" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/text_normal_graymm_style" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/collect_ware_price_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <TextView android:layout_gravity="center_vertical" android:id="@id/pro_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" style="@style/text_red_normal_style" />
+            <TextView android:layout_gravity="center_vertical" android:id="@id/shoping_origion_price" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/text_small_graym_style" />
+        </LinearLayout>
+        <TextView android:textColor="@color/btn_color_red" android:id="@id/collect_ware_status_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="已售罄" style="@style/text_red_normal_bold_style" />
+    </LinearLayout>
+    <ImageView android:id="@id/add_buy_car" android:background="@drawable/promotion_add_car_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

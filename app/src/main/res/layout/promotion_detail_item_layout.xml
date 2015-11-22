@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:padding="@dimen/common_goods_grid_margin" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:id="@id/pro_detail_img" android:layout_width="80.0dip" android:layout_height="80.0dip" android:scaleType="fitXY" />
+        <TextView android:ellipsize="end" android:id="@id/pro_detail_name" android:paddingLeft="@dimen/common_goods_grid_item_margin" android:paddingTop="5.0dip" android:paddingRight="@dimen/common_goods_grid_item_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="2" android:lineSpacingExtra="3.0dip" style="@style/text_small_graymm_style" />
+        <include android:clickable="false" layout="@layout/promotion_base" />
+        <RelativeLayout android:id="@id/ware_info_bottom" android:paddingLeft="@dimen/common_goods_grid_item_margin" android:paddingRight="@dimen/common_goods_grid_item_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip">
+            <TextView android:id="@id/order_price_origin_tv" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="22.0dip" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/text_small_graym_style" />
+            <TextView android:id="@id/no_pro_state" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="售罄" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/text_small_black_normal_style" />
+        </RelativeLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/pro_detail_addimg" android:paddingLeft="15.0dip" android:paddingTop="18.0dip" android:paddingRight="@dimen/common_goods_grid_item_margin" android:paddingBottom="5.0dip" android:visibility="gone" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginRight="@dimen/common_goods_grid_margin" android:src="@drawable/promotion_add_car_icon" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <ImageView android:id="@id/iv_tag" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/presale_tag" android:scaleType="fitXY" android:layout_alignLeft="@id/container" android:layout_alignTop="@id/container" />
+</RelativeLayout>

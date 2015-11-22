@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/bg_translucent2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/lin_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/lin_child_more" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/addshopdetail_pop_height">
+        <RadioGroup android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/radioGroup" android:background="@drawable/addshopping_pop" android:paddingTop="6.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RadioButton android:textColor="@drawable/selector_main_radio_textcolor_more" android:id="@id/radio0" android:text="首页" android:drawableTop="@drawable/selector_main_home_more" style="@style/main_radio_style" />
+            <RadioButton android:textColor="@drawable/selector_main_radio_textcolor_more" android:id="@id/radio1" android:text="分类" android:drawableTop="@drawable/selector_main_sort_more" style="@style/main_radio_style" />
+            <RadioButton android:textColor="@drawable/selector_main_radio_textcolor_more" android:id="@id/radio2" android:text="购物车" android:drawableTop="@drawable/selector_main_car_more" style="@style/main_radio_style" />
+            <RadioButton android:textColor="@drawable/selector_main_radio_textcolor_more" android:id="@id/radio3" android:text="我的" android:drawableTop="@drawable/selector_main_my_more" style="@style/main_radio_style" />
+        </RadioGroup>
+    </LinearLayout>
+</RelativeLayout>

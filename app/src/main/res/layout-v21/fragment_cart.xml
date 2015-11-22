@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/bg_common" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.Toolbar android:id="@id/cart_toolbar_view" android:background="@drawable/d_border" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?actionBarSize" android:translationZ="2.0dip">
+        <include layout="@layout/toolbar_cart" />
+    </android.support.v7.widget.Toolbar>
+    <com.wm.dmall.cart.view.CartManageView android:id="@id/cart_edit_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <android.support.v4.widget.SwipeRefreshLayout android:id="@id/cart_ware_srl" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/cart_edit_view" android:layout_below="@id/cart_toolbar_view">
+        <ExpandableListView android:id="@id/cart_ware_elv" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:groupIndicator="@null" android:childIndicator="@null" android:childDivider="@null" android:divider="@null" android:dividerHeight="0.0px" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <android.support.v4.widget.SwipeRefreshLayout android:id="@id/cart_ware_empty_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/cart_edit_view">
+        <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="center" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="0.0dip" android:src="@drawable/cart_defalut_no_prodcut" />
+        </ScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</RelativeLayout>

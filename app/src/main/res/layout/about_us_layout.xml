@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/bg_common" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ws="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/toolbar" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/logo_dmall" android:contentDescription="@string/abc_action_mode_done" />
+        <TextView android:textSize="16.0sp" android:id="@id/about_cur_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" style="@style/text_small_black_light_style" />
+        <com.material.widget.PaperButton android:id="@id/about_version_state" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="200.0dip" android:layout_height="55.0dip" android:layout_marginLeft="2.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="2.0dip" ws:paper_text="检查更新" ws:paper_text_size="@dimen/small_text" ws:paper_text_color="@color/white" ws:paper_color="@color/btn_color_red" />
+        <com.material.widget.PaperButton android:id="@id/about_version_notupate" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:visibility="gone" android:layout_width="200.0dip" android:layout_height="55.0dip" android:layout_marginLeft="2.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="2.0dip" ws:paper_text="你已经更新到最新版本" ws:paper_text_size="@dimen/normal_text" ws:paper_text_color="@color/white" ws:paper_color="@color/btn_color_gray" />
+    </LinearLayout>
+</RelativeLayout>

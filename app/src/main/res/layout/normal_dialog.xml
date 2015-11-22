@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/dialog_corners_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip">
+            <View android:layout_gravity="center_vertical" android:background="@color/color_red_ff5000" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <TextView android:textSize="@dimen/text_lv18" android:textColor="@color/color_red_ff5000" android:layout_gravity="center_horizontal" android:id="@id/tv_title" android:background="@color/white" android:paddingLeft="@dimen/dialog_title_lr" android:paddingRight="@dimen/dialog_title_lr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="运费规则" android:singleLine="true" />
+        </FrameLayout>
+        <ScrollView android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_weight="1.0" android:overScrollMode="never">
+            <TextView android:id="@id/tv_msgcontent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" style="@style/text_up_dialog_style" />
+        </ScrollView>
+        <LinearLayout android:id="@id/two_btn_lin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip">
+            <Button android:textSize="@dimen/text_lv16" android:textColor="@color/color_red_ff5000" android:id="@id/left_btn" android:background="@drawable/dialog_white_btn_bg_selector" android:layout_width="0.0dip" android:layout_height="40.0dip" android:text="@string/dialog_left_btn1" android:layout_weight="1.0" style="@style/text_normal_black_style" />
+            <Button android:textSize="@dimen/text_lv16" android:id="@id/right_btn" android:background="@drawable/dialog_red_btn_bg_selector" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:text="@string/dialog_right_btn" android:layout_weight="1.0" style="@style/text_normal_white_style" />
+        </LinearLayout>
+        <Button android:textSize="@dimen/text_lv16" android:textColor="@color/color_red_ff5000" android:id="@id/center_btn" android:background="@drawable/dialog_white_btn_bg_selector" android:layout_width="fill_parent" android:layout_height="@dimen/share_cancel_height" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip" />
+    </LinearLayout>
+</LinearLayout>

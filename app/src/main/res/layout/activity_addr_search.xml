@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/toolbar" />
+    <include android:id="@id/addr_search_history_layer" android:visibility="gone" layout="@layout/addr_search_history_layer" />
+    <LinearLayout android:orientation="vertical" android:id="@id/add_addr_search_layer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/addr_search_header" />
+        <ListView android:id="@id/lv_addr" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="#ffdddddd" android:dividerHeight="1.0px" />
+        <RelativeLayout android:id="@id/rl_empty" android:background="@color/white" android:padding="12.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:ellipsize="end" android:id="@id/tv_key" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="在地图上寻找" android:singleLine="true" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/common_arrow_img" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

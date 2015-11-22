@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="choose_down_circle_arrow">false</item>
+    <item type="drawable" name="prodcut_ico_collect">false</item>
+    <item type="drawable" name="prodcut_ico_collect_fill">false</item>
+    <item type="drawable" name="edit_barcode_button">false</item>
+    <item type="drawable" name="icon_card_help">false</item>
+    <item type="drawable" name="my_ico_coupon">false</item>
+    <item type="drawable" name="my_ico_coupon_new">false</item>
+    <item type="drawable" name="scan_barcode_guide_img">false</item>
+    <item type="drawable" name="scan_barcode_line">false</item>
+</resources>

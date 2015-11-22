@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wm.dmall.view.DmallButton android:id="@id/btn_skip" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="50.0dip" ws:paper_text="跳 过" ws:paper_text_size="11.0sp" ws:paper_text_color="#99ffffff" ws:paper_color="#7e000000" ws:paper_corner_radius="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ws="http://schemas.android.com/apk/res-auto" />

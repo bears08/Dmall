@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?actionBarSize"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:textColor="@color/smartgo_add_cart_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="绑定门店" android:layout_centerVertical="true" style="@style/text_large_black_normal_style" />
+    <ImageView android:id="@id/scan_store_toolbar_usinghelp_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:src="@drawable/smartgo_usinghelp_icon" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

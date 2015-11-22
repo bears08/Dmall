@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.wm.dmall" xmlns:ws="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:id="@id/view_load_more" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:enabled="false" android:textSize="@dimen/text_lv15" android:textColor="@color/color_orange_ea592b" android:gravity="center" android:id="@id/button_load_more_or_no_more" android:background="@null" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="点击加载更多" />
+        <View android:background="@color/login_edit_uderline_color" android:layout_height="11.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" style="@style/view_divider_vertical_line" />
+        <Button android:textSize="@dimen/text_lv15" android:textColor="@color/color_orange_ea592b" android:id="@id/button_valid_invalid" android:background="@null" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="查看已失效的卡" />
+    </LinearLayout>
+    <com.material.widget.CircularProgress android:id="@id/progress" android:visibility="gone" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_margin="1.0dip" android:layout_centerInParent="true" ws:circular_progress_color="@color/btn_color_red" ws:circular_progress_size="Small" />
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="choose_down_circle_arrow">false</item>
+    <item type="drawable" name="prodcut_ico_collect">false</item>
+    <item type="drawable" name="prodcut_ico_collect_fill">false</item>
+    <item type="drawable" name="my_ico_coupon">false</item>
+    <item type="drawable" name="my_ico_coupon_new">false</item>
+    <item type="drawable" name="ic_alipay">false</item>
+    <item type="drawable" name="ic_wechatpay">false</item>
+</resources>

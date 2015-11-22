@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/login_bg_img" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ws="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/top_back_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/top_back_img" android:background="@drawable/abc_ic_ab_back_mtrl_am_alpha" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" />
+    </LinearLayout>
+    <ScrollView android:scrollbars="@null" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="50.0dip">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip">
+                    <com.material.widget.FloatingEditText android:id="@id/login_phone_edit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint=" 输入11位手机号" android:textCursorDrawable="@drawable/common_mouse_cursor_index" ws:floating_edit_text_color="@color/login_edit_uderline_color" ws:floating_edit_text_highlighted_color="@color/white" ws:floating_edit_text_error_color="@color/btn_color_red" ws:floating_edit_text_underline_height="1.0dip" ws:floating_edit_text_underline_highlighted_height="1.0dip" style="@style/text_normal_white_style" />
+                    <RelativeLayout android:id="@id/user_phone_clear" android:visibility="gone" android:clickable="true" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_alignParentRight="true" android:layout_alignParentEnd="true">
+                        <ImageView android:background="@drawable/login_btn_clear" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="ceshi" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" />
+                    </RelativeLayout>
+                </RelativeLayout>
+                <RelativeLayout android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip">
+                    <com.material.widget.FloatingEditText android:id="@id/login_pass_edit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="输入密码" android:inputType="textPassword" android:textCursorDrawable="@drawable/common_mouse_cursor_index" ws:floating_edit_text_color="@color/login_edit_uderline_color" ws:floating_edit_text_highlighted_color="@color/white" ws:floating_edit_text_error_color="@color/btn_color_red" ws:floating_edit_text_underline_height="1.0dip" ws:floating_edit_text_underline_highlighted_height="1.0dip" style="@style/text_normal_white_style" />
+                    <RelativeLayout android:id="@id/user_pass_isshow_layout" android:clickable="true" android:layout_width="55.0dip" android:layout_height="50.0dip" android:layout_alignParentRight="true" android:layout_alignParentEnd="true">
+                        <com.zcw.togglebutton.ToggleButton android:id="@id/user_pass_isshow" android:layout_width="54.0dip" android:layout_height="30.0dip" android:layout_marginTop="5.0dip" ws:offBorderColor="@color/toggle_off_color" ws:offColor="@color/toggle_off_color" ws:onColor="@color/btn_color_red" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+            <com.material.widget.PaperButton android:id="@id/user_login_btn" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginLeft="13.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="13.0dip" ws:paper_text="登  录" ws:paper_text_size="@dimen/normal_text" ws:paper_text_color="@color/white_tra" ws:paper_color="@color/btn_color_red" />
+            <com.material.widget.PaperButton android:id="@id/user_regist_btn" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginLeft="13.0dip" android:layout_marginRight="13.0dip" ws:paper_text="注  册" ws:paper_text_size="@dimen/normal_text" ws:paper_text_color="@color/btn_color_red" ws:paper_color="@color/login_gray_bg" />
+            <LinearLayout android:gravity="right" android:orientation="horizontal" android:background="@android:color/transparent" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <TextView android:id="@id/user_forgetpass_txt" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="忘记密码" android:layout_marginStart="10.0dip" style="@style/text_normal_white_style" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

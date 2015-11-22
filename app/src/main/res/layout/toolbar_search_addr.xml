@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/tv_cancel" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="取消" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/text_normal_white_style" />
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/category_bd_search" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/tv_cancel">
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/category_ico_search" />
+        <EditText android:layout_gravity="center_vertical" android:id="@id/et_hint" android:background="@null" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:hint=" 写字楼，小区" android:cursorVisible="true" android:singleLine="true" android:layout_weight="1.0" android:textCursorDrawable="@null" style="@style/text_normal_graymm_style" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_clear" android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/close_pushbanner" />
+    </LinearLayout>
+</RelativeLayout>

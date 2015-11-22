@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/coupon_panel" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="100.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/coupon_sum_panel" layout="@layout/coupon_base_left" />
+    <include android:id="@id/coupon_main" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toRightOf="@id/coupon_sum_panel" android:layout_alignParentRight="true" layout="@layout/coupon_base_right" />
+    <View android:id="@id/coupon_mask" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:alpha="0.3" />
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/login_ico_close" />
+    <TextView android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="160.0dip" android:text="选择城市" android:singleLine="true" android:layout_centerInParent="true" style="@style/text_large_white_style" />
+    <View android:layout_width="1.0px" android:layout_height="1.0px" android:layout_alignParentRight="true" />
+</RelativeLayout>

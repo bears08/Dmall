@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/no_collection_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ws="http://schemas.android.com/apk/res-auto">
+    <Space android:layout_width="1.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <ImageView android:id="@id/empty_nodata_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/prodcut_ico_empty_collect" />
+    <TextView android:id="@id/empty_title_two" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="你还没有收藏商品" style="@style/text_large_black_normal_style" />
+    <TextView android:id="@id/empty_title_one" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="快去挑选商品吧" style="@style/text_small_black_light_style" />
+    <com.material.widget.PaperButton android:id="@id/goto_choose_pro" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="150.0dip" android:layout_height="55.0dip" android:layout_marginTop="10.0dip" ws:paper_text="前往挑选商品" ws:paper_text_size="@dimen/small_text" ws:paper_text_color="@color/white" ws:paper_color="@color/btn_color_red" />
+    <Space android:layout_width="1.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+</LinearLayout>

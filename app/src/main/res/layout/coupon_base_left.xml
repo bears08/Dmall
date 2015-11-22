@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/coupon_sum_panel" android:layout_width="117.0dip" android:layout_height="100.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/coupon_sum_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/coupon_sketch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="8.0dip" android:layout_alignParentLeft="true" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/coupon_monkey_mark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:layout_marginBottom="20.0dip" android:text="元" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <TextView android:textSize="44.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/coupon_monkey_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_toLeftOf="@id/coupon_monkey_mark" android:layout_below="@id/coupon_sketch" android:layout_alignBottom="@id/coupon_monkey_mark" />
+</RelativeLayout>

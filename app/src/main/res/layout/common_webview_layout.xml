@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.wm.dmall">
+    <include android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/toolbar" />
+    <com.material.widget.CircularProgress android:id="@id/loading_progress" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_margin="20.0dip" android:layout_centerInParent="true" app:circular_progress_color="@color/btn_color_red" app:circular_progress_size="Small" />
+    <RelativeLayout android:gravity="center" android:id="@id/common_page_nodata_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@id/common_page_nodata_img" android:layout_width="100.0dip" android:layout_height="100.0dip" android:src="@drawable/ic_error_page" android:layout_centerHorizontal="true" />
+        <com.material.widget.PaperButton android:textSize="14.0dip" android:textColor="#ff717171" android:ellipsize="end" android:id="@id/common_page_nodata_btn" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="200.0dip" android:layout_height="54.0dip" android:layout_marginTop="10.0dip" android:singleLine="true" android:layout_below="@id/common_page_nodata_img" android:layout_centerHorizontal="true" app:paper_text="加载失败,点击重试" app:paper_text_color="@color/white" app:paper_color="@color/color_red_ff5000" />
+    </RelativeLayout>
+    <TextView android:gravity="center" android:id="@id/unaction_text_notice" android:background="@color/loc_bg" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="当前选中的门店未参加本次活动" android:layout_below="@id/toolbar" style="@style/text_small_white_style" />
+    <ProgressBar android:id="@id/webloading_progressbar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="2.0dip" android:max="100" android:progressDrawable="@drawable/webloading_progressbar" android:layout_below="@id/toolbar" style="?android:attr/progressBarStyleHorizontal" />
+    <com.wm.dmall.base.FastWebView android:id="@id/common_webview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/webloading_progressbar" />
+    <RelativeLayout android:id="@id/promotion_unaction_layout" android:background="@color/bg_translucent" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/toolbar">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="当前门店没有该活动，请重新选择门店" android:layout_centerInParent="true" style="@style/text_small_white_style" />
+    </RelativeLayout>
+</RelativeLayout>

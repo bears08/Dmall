@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/paydelivery_dialog_height">
+        <Button android:textColor="@color/text_black_normal" android:id="@id/btn_cancel" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/share_cancel" android:layout_centerVertical="true" style="@style/invoice_style" />
+        <Button android:textSize="@dimen/text_lv16" android:textColor="@color/color_red_ff5000" android:id="@id/btn_confirm" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/invoice_wheel_sure" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <View android:background="@color/wheel_hint_color" android:layout_width="fill_parent" android:layout_height="0.20000005dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="15.0dip">
+        <com.wm.dmall.view.wheelview.WheelView android:id="@id/id_province" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <com.wm.dmall.view.wheelview.WheelView android:id="@id/id_city" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <com.wm.dmall.view.wheelview.WheelView android:id="@id/id_county" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

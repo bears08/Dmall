@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button android:textSize="20.0sp" android:textColor="#d5ea592b" android:id="@id/btn_start" android:background="@drawable/as_start" android:paddingLeft="51.0dip" android:paddingRight="51.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="48.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

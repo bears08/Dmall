@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/add_car_root_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ws="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/toolbar" />
+    <com.material.widget.CircularProgress android:id="@id/promotion_progress" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_margin="1.0dip" android:layout_centerInParent="true" ws:circular_progress_color="@color/btn_color_red" ws:circular_progress_size="Small" />
+    <RelativeLayout android:gravity="center" android:id="@id/promotion_nodata_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@id/promotion_nodata_img" android:layout_width="100.0dip" android:layout_height="100.0dip" android:src="@drawable/ic_error_page" android:layout_centerHorizontal="true" />
+        <com.material.widget.PaperButton android:textSize="14.0dip" android:textColor="#ff717171" android:ellipsize="end" android:id="@id/promotion_nodata_btn" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="200.0dip" android:layout_height="54.0dip" android:layout_marginTop="10.0dip" android:singleLine="true" android:layout_below="@id/promotion_nodata_img" android:layout_centerHorizontal="true" ws:paper_text="加载失败,点击重试" ws:paper_text_color="@color/white" ws:paper_color="@color/color_red_ff5000" />
+    </RelativeLayout>
+    <ScrollView android:id="@id/root_scroll_view" android:visibility="gone" android:scrollbars="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/add_car_bottom_root_layout" android:layout_below="@id/toolbar">
+        <LinearLayout android:orientation="vertical" android:id="@id/root_scroll_content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/common_white_noround_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="250.0dip">
+                    <android.support.v4.view.ViewPager android:id="@id/pro_imglist_viewpage" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" />
+                    <com.wm.dmall.view.TagChooseLayout android:id="@id/tag_choose_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+                <View android:background="@color/divided_line_color" android:layout_width="fill_parent" android:layout_height="0.100000024dip" />
+                <RelativeLayout android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <include layout="@layout/shopping_price" />
+                </RelativeLayout>
+            </LinearLayout>
+            <ViewStub android:id="@id/promotion_list_stub" android:layout="@layout/shopping_price" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+            <RelativeLayout android:id="@id/check_pro_moredetial_layout" android:background="@drawable/single_white_btn_bg_selector" android:paddingLeft="10.0dip" android:paddingTop="15.0dip" android:paddingRight="10.0dip" android:paddingBottom="15.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="商品详情(建议在WIFI条件下查看)" style="@style/text_small_black_light_style" />
+                <ImageView android:background="@drawable/common_arrow_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/add_order_check_pro_detail_layout" android:background="@drawable/common_white_noround_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <TextView android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="更多惊喜价" style="@style/text_small_black_light_style" />
+                <View android:background="@color/divided_line_color" android:layout_width="fill_parent" android:layout_height="0.100000024dip" />
+                <com.wm.dmall.view.OrderHoriListLayout android:orientation="vertical" android:id="@id/recommend_listview_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout android:id="@id/add_car_bottom_root_layout" android:background="@drawable/common_white_noround_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@id/view_collection" android:layout_width="58.0dip" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <ImageView android:id="@id/collection_state_img" android:background="@drawable/icon_collection_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <View android:id="@id/view_divider_line" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:layout_toRightOf="@id/view_collection" style="@style/view_divider_vertical_line" />
+        <RelativeLayout android:layout_width="58.0dip" android:layout_height="wrap_content" android:layout_toRightOf="@id/view_divider_line" android:layout_centerVertical="true">
+            <ImageView android:id="@id/add_car_img" android:background="@drawable/icon_carshop_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+            <TextView android:textSize="9.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/add_car_price" android:background="@drawable/car_total_price" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginRight="4.0dip" android:text="99" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <Button android:textSize="@dimen/text_lv16" android:textColor="@color/white" android:gravity="center" android:id="@id/add_car_btn" android:background="@drawable/button_add_carshop_selector" android:layout_width="130.0dip" android:layout_height="fill_parent" android:text="加入购物车" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

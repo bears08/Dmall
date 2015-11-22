@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/share_btn_top" android:layout_width="fill_parent" android:layout_height="@dimen/share_btn_height" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+        <TextView android:textSize="@dimen/text_lv14" android:textColor="@color/text_black_normal" android:gravity="center" android:id="@id/share_wx_tv" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/share_wx_tv" android:drawableTop="@drawable/share_wx_selector" android:drawablePadding="10.0dip" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/text_lv14" android:textColor="@color/text_black_normal" android:gravity="center" android:id="@id/share_wxpy_tv" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/share_wxpy_tv" android:drawableTop="@drawable/share_wxpy_selector" android:drawablePadding="10.0dip" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/text_lv14" android:textColor="@color/text_black_normal" android:gravity="center" android:id="@id/share_qqzone_tv" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/share_qqzone_tv" android:drawableTop="@drawable/share_qqzone_selector" android:drawablePadding="10.0dip" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/text_lv14" android:textColor="@color/text_black_normal" android:gravity="center" android:id="@id/share_weibo_tv" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/share_weibo_tv" android:drawableTop="@drawable/share_weibo_selector" android:drawablePadding="10.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <View android:background="@color/share_division_bg" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <Button android:textSize="@dimen/text_lv15" android:textColor="@color/share_division_bg" android:id="@id/btn_cancel" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="@dimen/share_cancel_height" android:text="@string/share_cancel" />
+</LinearLayout>

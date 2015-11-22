@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v4.view.ViewPager android:id="@id/splash_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fadeScrollbars="false" android:overScrollMode="never" android:requiresFadingEdge="none" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/splash_index_panel" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="24.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <ViewStub android:id="@id/stub_skip" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <ViewStub android:id="@id/stub_start" android:paddingLeft="51.0dip" android:paddingRight="51.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="48.0dip" android:layout_marginBottom="74.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

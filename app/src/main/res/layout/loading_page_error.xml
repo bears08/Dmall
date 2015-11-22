@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/bg_common" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.wm.dmall">
+    <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/page_iv" android:layout_width="150.0dip" android:layout_height="150.0dip" android:src="@drawable/ic_error_page" android:scaleType="centerInside" android:layout_centerHorizontal="true" />
+        <com.material.widget.PaperButton android:textSize="14.0dip" android:textColor="@color/color_red_ff5000" android:ellipsize="end" android:id="@id/paper_button" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="160.0dip" android:layout_height="54.0dip" android:layout_marginTop="10.0dip" android:singleLine="true" android:layout_below="@id/page_iv" android:layout_centerHorizontal="true" app:paper_text="加载失败，点击重试" app:paper_text_color="@color/white" app:paper_color="@color/color_red_ff5000" />
+    </RelativeLayout>
+</FrameLayout>

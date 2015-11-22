@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ws="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/rl" android:background="@color/bg_common" android:layout_width="fill_parent" android:layout_height="56.0dip">
+        <ImageView android:id="@id/iv_back" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/abc_ic_ab_back_mtrl_am_alpha_deep_gray" android:layout_centerVertical="true" />
+        <TextView android:gravity="center" android:id="@id/tv_reset" android:background="@drawable/filtercategory_bg_item_nor" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="4.0dip" android:text="重置条件" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/text_normal_black_style" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_confirm" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <View style="@style/DividedLine" />
+        <com.material.widget.PaperButton android:id="@id/pb_confirm" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" ws:paper_text="@string/ok" ws:paper_text_size="@dimen/normal_text" ws:paper_text_color="@color/white" ws:paper_color="@color/btn_color_red" />
+    </LinearLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/ll_confirm" android:layout_below="@id/rl">
+        <LinearLayout android:orientation="vertical" android:id="@id/order_wares_container_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </ScrollView>
+</RelativeLayout>

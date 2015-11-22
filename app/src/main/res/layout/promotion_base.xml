@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/promotion_layer" android:paddingLeft="@dimen/common_goods_grid_item_margin" android:paddingRight="@dimen/common_goods_grid_item_margin" android:layout_width="fill_parent" android:layout_height="13.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/promotion_tag_reduce_price" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/promotion_reduce_price" />
+    <ImageView android:id="@id/promotion_tag_special_price" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/promotion_special_price" />
+    <ImageView android:id="@id/promotion_tag_discount" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/promotion_discount" />
+    <ImageView android:id="@id/promotion_tag_full_cut" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/promotion_full_cut" />
+</LinearLayout>

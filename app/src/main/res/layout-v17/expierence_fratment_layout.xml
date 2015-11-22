@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:background="@color/bg_common" android:scrollbars="@null" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ws="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:background="@drawable/common_white_round_bg" android:layout_width="fill_parent" android:layout_height="250.0dip" android:layout_margin="10.0dip">
+            <EditText android:gravity="top" android:id="@id/callback_edt" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:hint="请描述下您的问题，下方可上传问题截图以便可以让我们更好的了解." android:cursorVisible="true" android:singleLine="false" android:maxLength="200" android:textCursorDrawable="@null" style="@style/text_small_black_light_style" />
+            <com.wm.dmall.view.OrderHoriListLayout android:orientation="vertical" android:id="@id/callback_img_list" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" android:layout_toLeftOf="@id/callbac_mess_notice_count" android:layout_marginEnd="5.0dip" android:layout_toStartOf="@id/callbac_mess_notice_count" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:layout_alignParentBottom="true">
+                <RelativeLayout android:id="@id/upload_img_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip">
+                    <ImageView android:id="@id/callback_img" android:layout_width="80.0dip" android:layout_height="80.0dip" android:src="@drawable/login_bg" android:scaleType="fitXY" android:layout_alignBottom="@id/callback_delete_layout" />
+                    <RelativeLayout android:id="@id/callback_delete_layout" android:background="@android:color/transparent" android:layout_width="85.0dip" android:layout_height="85.0dip">
+                        <ImageView android:id="@id/callback_delete" android:background="@drawable/advice_ico_del" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" />
+                    </RelativeLayout>
+                </RelativeLayout>
+                <ImageView android:id="@id/callback_img_add" android:background="@drawable/advice_ico_add_pic" android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" />
+            </LinearLayout>
+            <TextView android:id="@id/callbac_mess_notice_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:text="还可输入N个字符" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_marginEnd="10.0dip" android:layout_alignParentEnd="true" style="@style/text_small_black_light_style" />
+        </RelativeLayout>
+        <EditText android:id="@id/user_connect_phone" android:background="@drawable/common_white_round_bg" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:hint="请输入你的电话号码，方便我们联系您。" android:cursorVisible="true" android:textCursorDrawable="@null" style="@style/text_small_black_normal_style" />
+        <com.material.widget.PaperButton android:id="@id/callback_submit" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginTop="30.0dip" ws:paper_text="提  交" ws:paper_text_size="@dimen/normal_text" ws:paper_text_color="@color/white" ws:paper_color="@color/btn_color_red" />
+    </LinearLayout>
+</ScrollView>

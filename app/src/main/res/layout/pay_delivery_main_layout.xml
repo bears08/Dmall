@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/bg_common" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ws="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/toolbar" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/toolbar" />
+    <ScrollView android:id="@id/invoice_scoll_view" android:scrollbars="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/invoice_confirm_btn_layout" android:layout_below="@id/toolbar">
+        <LinearLayout android:orientation="vertical" android:background="@android:color/transparent" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/pay_method_layout" android:background="@drawable/common_white_noround_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/invoice_left" android:layout_marginTop="@dimen/invoice_top" android:text="支付方式" style="@style/invoice_style" />
+                <com.wm.dmall.view.SelfGridView android:id="@id/pd_paymethod_gridview" android:scrollbars="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="60.0dip" android:layout_marginBottom="10.0dip" android:numColumns="2" />
+                <TextView android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginBottom="5.0dip" android:text="在线支付支持微信，支付宝。" style="@style/text_small_black_light_style" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/common_white_noround_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/invoice_left" android:layout_marginTop="@dimen/invoice_top" android:text="配送方式" style="@style/invoice_style" />
+                <com.wm.dmall.view.SelfGridView android:id="@id/pd_delivery_gridview" android:scrollbars="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="60.0dip" android:layout_marginBottom="10.0dip" android:numColumns="2" />
+                <View android:background="@color/divided_line_color" android:layout_width="fill_parent" android:layout_height="0.20000005dip" />
+                <LinearLayout android:orientation="vertical" android:id="@id/self_take_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/invoice_left" android:layout_marginTop="@dimen/invoice_top" android:text="自提地点" style="@style/invoice_style" />
+                    <TextView android:id="@id/pd_selftake_loacation" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/invoice_left" android:layout_marginTop="12.0dip" android:layout_marginBottom="15.0dip" style="@style/text_normal_graymmm_style" />
+                </LinearLayout>
+                <View android:background="@color/divided_line_color" android:layout_width="fill_parent" android:layout_height="0.20000005dip" android:layout_marginLeft="@dimen/invoice_left" android:layout_marginRight="@dimen/invoice_left" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/invoice_left" android:layout_marginRight="@dimen/invoice_left">
+                    <TextView android:id="@id/pd_send_time_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/invoice_top" android:layout_marginBottom="13.0dip" android:text="送货时间" style="@style/invoice_style" />
+                    <RelativeLayout android:id="@id/pd_choose_time_layout" android:background="@drawable/common_white_round_bg1" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/invoice_edit_height" android:layout_marginBottom="18.0dip">
+                        <TextView android:id="@id/pd_send_time" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="" android:layout_centerVertical="true" style="@style/invoice_style" />
+                        <ImageView android:background="@drawable/time_choose_tag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="20.0dip" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="vertical" android:id="@id/invoice_confirm_btn_layout" android:background="@drawable/common_white_noround_bg" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.material.widget.PaperButton android:id="@id/pd_confirm_btn" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" ws:paper_text="@string/ok" ws:paper_text_size="@dimen/normal_text" ws:paper_text_color="@color/white" ws:paper_color="@color/btn_color_red" />
+    </LinearLayout>
+</RelativeLayout>

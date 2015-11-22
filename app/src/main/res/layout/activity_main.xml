@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/toolbar" />
+    <RadioGroup android:orientation="horizontal" android:id="@id/radioGroup" android:background="@color/dark_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="48.0dip" android:layout_alignParentBottom="true">
+        <RadioButton android:id="@id/radio0" android:checked="true" android:text="首页" android:drawableTop="@drawable/selector_main_home" style="@style/main_radio_style" />
+        <RadioButton android:id="@id/radio1" android:text="分类" android:drawableTop="@drawable/selector_main_sort" style="@style/main_radio_style" />
+        <RadioButton android:id="@id/radio2" android:text="购物车" android:drawableTop="@drawable/selector_main_car" style="@style/main_radio_style" />
+        <RadioButton android:id="@id/radio3" android:text="我的" android:drawableTop="@drawable/selector_main_my" style="@style/main_radio_style" />
+    </RadioGroup>
+    <com.wm.dmall.view.SelfViewPager android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/radioGroup" android:layout_below="@id/toolbar" />
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" style="@style/NavPage"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/result_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="将该app注册到微信" />
+    <Button android:id="@id/reg_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="将该app注册到微信" />
+    <Button android:id="@id/goto_send_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="跳转到发消息界面" />
+    <Button android:id="@id/goto_pay_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="跳转到支付界面" />
+    <Button android:id="@id/goto_fav_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="跳转到收藏界面" />
+    <Button android:id="@id/launch_wx_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="启动微信" />
+    <Button android:id="@id/check_timeline_supported_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="检查是否支持发送到朋友圈" />
+</LinearLayout>

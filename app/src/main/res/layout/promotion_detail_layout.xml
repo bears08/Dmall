@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/bg_common" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ws="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/toolbar" />
+    <com.material.widget.CircularProgress android:id="@id/promotion_progress" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_margin="1.0dip" android:layout_centerInParent="true" ws:circular_progress_color="@color/btn_color_red" ws:circular_progress_size="Small" />
+    <RelativeLayout android:gravity="center" android:id="@id/promotion_nodata_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@id/promotion_nodata_img" android:background="@drawable/ic_error_page" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+        <com.material.widget.PaperButton android:textSize="14.0dip" android:textColor="#ff717171" android:ellipsize="end" android:id="@id/promotion_nodata_btn" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="200.0dip" android:layout_height="54.0dip" android:layout_marginTop="10.0dip" android:singleLine="true" android:layout_below="@id/promotion_nodata_img" android:layout_centerHorizontal="true" ws:paper_text="加载失败,点击重试" ws:paper_text_color="@color/white" ws:paper_color="@color/color_red_ff5000" />
+    </RelativeLayout>
+    <android.support.v4.widget.SwipeRefreshLayout android:id="@id/promotion_detail_refresh_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/toolbar">
+        <com.wm.dmall.view.SelfScrollView android:id="@id/scroll_root_layout" android:scrollbars="@null" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/promotion_detail_root_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:gravity="center" android:id="@id/unaction_text_notice" android:background="@color/loc_bg" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="当前选中的门店未参加本次活动" style="@style/text_small_white_style" />
+                <ImageView android:id="@id/pro_detail_top_img" android:layout_width="fill_parent" android:layout_height="190.0dip" android:scaleType="fitXY" />
+                <LinearLayout android:orientation="vertical" android:background="@drawable/common_white_noround_bg" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:id="@id/promotion_detial_descrip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="活动描述:" style="@style/text_small_black_normal_style" />
+                    <TextView android:id="@id/promotion_detial_setime" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="开始和结束时间" style="@style/text_small_black_normal_style" />
+                </LinearLayout>
+                <com.wm.dmall.view.SelfGridView android:id="@id/pro_detail_gridview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/common_goods_grid_margin" android:listSelector="@android:color/transparent" android:overScrollMode="never" />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/loading_view_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.material.widget.CircularProgress android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_margin="10.0dip" ws:circular_progress_color="@color/btn_color_red" ws:circular_progress_size="Small" />
+                </LinearLayout>
+            </LinearLayout>
+        </com.wm.dmall.view.SelfScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <ImageView android:id="@id/back_to_top_img" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20.0dip" android:src="@drawable/back_top" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

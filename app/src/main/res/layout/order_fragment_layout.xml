@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/bg_common" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ws="http://schemas.android.com/apk/res-auto">
+    <com.wm.dmall.view.RefreshLayout android:id="@id/order_refresh_layout" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:id="@id/orders_list" android:scrollbars="@null" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="#00000000" android:divider="@null" android:layout_above="@id/space2_layout" android:layout_below="@id/space1_layout" android:overScrollMode="never" />
+    </com.wm.dmall.view.RefreshLayout>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View style="@style/DividedLine" />
+    <RelativeLayout android:id="@id/rl_fold" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <TextView android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:text="品牌" android:layout_centerVertical="true" style="@style/text_normal_graymm_style" />
+        <ImageView android:id="@id/iv_up" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_margin="8.0dip" android:src="@drawable/filtercategory_ico_toggle_off" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:id="@id/tv_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/iv_up" android:layout_centerVertical="true" style="@style/text_normal_red_style" />
+    </RelativeLayout>
+    <View style="@style/DividedLine" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_item_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

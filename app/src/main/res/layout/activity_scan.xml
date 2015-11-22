@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/toolbar" />
+    <RadioGroup android:orientation="horizontal" android:id="@id/scan_rg" android:background="#b3000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="48.0dip" android:layout_alignParentBottom="true">
+        <RadioButton android:id="@id/scan_coupon_rb" android:checked="true" android:text="@string/scan_coupon" android:drawableTop="@drawable/selector_scan_coupon" style="@style/main_radio_style" />
+        <RadioButton android:id="@id/scan_offline_barcode_rb" android:text="@string/scan_barcode_promotion" android:drawableTop="@drawable/selector_scan_offline_barcode" style="@style/main_radio_style" />
+        <RadioButton android:id="@id/scan_smartgo_rb" android:text="@string/scan_smartgo" android:drawableTop="@drawable/selector_scan_smartgo" style="@style/main_radio_style" />
+    </RadioGroup>
+</RelativeLayout>

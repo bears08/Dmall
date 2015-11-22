@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/back_layout" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_centerVertical="true">
+            <ImageView android:id="@id/add_car_back" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/common_back_icon" />
+            <TextView android:id="@id/add_car_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" style="@style/text_large_black_normal_style" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <RelativeLayout android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <RelativeLayout android:id="@id/rel_share" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip">
+                <ImageView android:id="@id/share_img" android:background="@drawable/share_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

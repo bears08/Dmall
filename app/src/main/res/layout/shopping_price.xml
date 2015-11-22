@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/shpoing_price_detail_layout" android:background="@android:color/transparent" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/shoping_remain_notice" android:layout_centerVertical="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="top" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip">
+        <TextView android:layout_gravity="center_vertical" android:id="@id/shpoing_pro_detail" android:paddingTop="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="3.0dip" style="@style/text_normal_graym_style" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/shpoing_p_lable" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+    </LinearLayout>
+    <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+        <TextView android:id="@id/shoping_p_price" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/text_red_normal_bold_style" />
+        <TextView android:id="@id/shpoing_pro_price" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/shoping_p_price" android:layout_centerVertical="true" style="@style/text_small_black_light_style" />
+        <TextView android:id="@id/shoping_tips" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/text_red_normal_style" />
+    </RelativeLayout>
+</LinearLayout>
